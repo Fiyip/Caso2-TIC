@@ -4,7 +4,13 @@ import java.io.FileWriter;
 
 public class programa_DV {
     public static void main(String[] args) {
-        generarReferencias(300, 20, 142, 256, 5, "prueba.txt");
+        int filas = Integer.parseInt(args[0]);
+        int columnas = Integer.parseInt(args[1]);
+        int tamVector = Integer.parseInt(args[2]);
+        int tamPagina = Integer.parseInt(args[3]);
+        int numPasadas = Integer.parseInt(args[4]);
+        String archivoSalida = (args[5]);
+        generarReferencias(filas, columnas, tamVector, tamPagina,numPasadas, archivoSalida);
     }
 
     public static void generarReferencias(int filas, int columnas, int tamVector, int tamPagina, int numPasadas, String archivoSalida) {
