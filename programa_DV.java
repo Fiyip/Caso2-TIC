@@ -5,7 +5,7 @@ import java.io.FileWriter;
 public class programa_DV {
     public static void main(String[] args) { 
 
-        generarReferencias(300, 20, 142, 256,5, "actividad1.txt");
+        generarReferencias(128, 128, 142, 1024, 5, "actividad1.txt");
     }
 
     public static void generarReferencias(int filas, int columnas, int tamVector, int tamPagina, int numPasadas, String archivoSalida) {
